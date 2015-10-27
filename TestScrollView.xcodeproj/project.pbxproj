@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31D341EE8416B230777591CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAA2BF24CD93BF6F3AE0BC0 /* libPods.a */; };
-		3E2572EC1BB6370500E04801 /* 123.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 3E2572EB1BB6370500E04801 /* 123.p12 */; };
-		3E515AF11BDF4DC000BCC733 /* GLImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E515AEE1BDF4DC000BCC733 /* GLImageScrollView.m */; };
-		3E515AF21BDF4DC000BCC733 /* NSTimer+GLBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E515AF01BDF4DC000BCC733 /* NSTimer+GLBlock.m */; };
+		3E515B001BDF5C5300BCC733 /* GLImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E515AFD1BDF5C5300BCC733 /* GLImageScrollView.m */; };
+		3E515B011BDF5C5300BCC733 /* NSTimer+GLBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E515AFF1BDF5C5300BCC733 /* NSTimer+GLBlock.m */; };
 		3E58CDDE1BB3D7810070A2E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E58CDDD1BB3D7810070A2E6 /* main.m */; };
 		3E58CDE11BB3D7810070A2E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E58CDE01BB3D7810070A2E6 /* AppDelegate.m */; };
 		3E58CDE41BB3D7810070A2E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E58CDE31BB3D7810070A2E6 /* ViewController.m */; };
@@ -20,11 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E2572EB1BB6370500E04801 /* 123.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 123.p12; sourceTree = "<group>"; };
-		3E515AED1BDF4DC000BCC733 /* GLImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageScrollView.h; sourceTree = "<group>"; };
-		3E515AEE1BDF4DC000BCC733 /* GLImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageScrollView.m; sourceTree = "<group>"; };
-		3E515AEF1BDF4DC000BCC733 /* NSTimer+GLBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+GLBlock.h"; sourceTree = "<group>"; };
-		3E515AF01BDF4DC000BCC733 /* NSTimer+GLBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+GLBlock.m"; sourceTree = "<group>"; };
+		3E515AFC1BDF5C5300BCC733 /* GLImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageScrollView.h; sourceTree = "<group>"; };
+		3E515AFD1BDF5C5300BCC733 /* GLImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageScrollView.m; sourceTree = "<group>"; };
+		3E515AFE1BDF5C5300BCC733 /* NSTimer+GLBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+GLBlock.h"; sourceTree = "<group>"; };
+		3E515AFF1BDF5C5300BCC733 /* NSTimer+GLBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+GLBlock.m"; sourceTree = "<group>"; };
 		3E58CDD91BB3D7810070A2E6 /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E58CDDD1BB3D7810070A2E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E58CDDF1BB3D7810070A2E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,16 +58,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E515AEC1BDF4DC000BCC733 /* GLImageScrollView */ = {
+		3E515AFB1BDF5C5300BCC733 /* GLImageScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				3E515AED1BDF4DC000BCC733 /* GLImageScrollView.h */,
-				3E515AEE1BDF4DC000BCC733 /* GLImageScrollView.m */,
-				3E515AEF1BDF4DC000BCC733 /* NSTimer+GLBlock.h */,
-				3E515AF01BDF4DC000BCC733 /* NSTimer+GLBlock.m */,
+				3E515AFC1BDF5C5300BCC733 /* GLImageScrollView.h */,
+				3E515AFD1BDF5C5300BCC733 /* GLImageScrollView.m */,
+				3E515AFE1BDF5C5300BCC733 /* NSTimer+GLBlock.h */,
+				3E515AFF1BDF5C5300BCC733 /* NSTimer+GLBlock.m */,
 			);
-			path = GLImageScrollView;
-			sourceTree = "<group>";
+			name = GLImageScrollView;
+			path = Classes/GLImageScrollView;
+			sourceTree = SOURCE_ROOT;
 		};
 		3E58CDD01BB3D7810070A2E6 = {
 			isa = PBXGroup;
@@ -96,7 +95,7 @@
 				3E58CDE01BB3D7810070A2E6 /* AppDelegate.m */,
 				3E58CDE21BB3D7810070A2E6 /* ViewController.h */,
 				3E58CDE31BB3D7810070A2E6 /* ViewController.m */,
-				3E515AEC1BDF4DC000BCC733 /* GLImageScrollView */,
+				3E515AFB1BDF5C5300BCC733 /* GLImageScrollView */,
 				3E58CDE51BB3D7810070A2E6 /* Main.storyboard */,
 				3E58CDE81BB3D7810070A2E6 /* Assets.xcassets */,
 				3E58CDEA1BB3D7810070A2E6 /* LaunchScreen.storyboard */,
@@ -109,7 +108,6 @@
 		3E58CDDC1BB3D7810070A2E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E2572EB1BB6370500E04801 /* 123.p12 */,
 				3E58CDDD1BB3D7810070A2E6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -185,7 +183,6 @@
 			files = (
 				3E58CDEC1BB3D7810070A2E6 /* LaunchScreen.storyboard in Resources */,
 				3E58CDE91BB3D7810070A2E6 /* Assets.xcassets in Resources */,
-				3E2572EC1BB6370500E04801 /* 123.p12 in Resources */,
 				3E58CDE71BB3D7810070A2E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +229,8 @@
 			files = (
 				3E58CDE41BB3D7810070A2E6 /* ViewController.m in Sources */,
 				3E58CDE11BB3D7810070A2E6 /* AppDelegate.m in Sources */,
-				3E515AF21BDF4DC000BCC733 /* NSTimer+GLBlock.m in Sources */,
-				3E515AF11BDF4DC000BCC733 /* GLImageScrollView.m in Sources */,
+				3E515B011BDF5C5300BCC733 /* NSTimer+GLBlock.m in Sources */,
+				3E515B001BDF5C5300BCC733 /* GLImageScrollView.m in Sources */,
 				3E58CDDE1BB3D7810070A2E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
