@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "GLImageScrolView"
+  s.name         = "GLImageScrollView"
   s.version      = "0.0.1"
   s.summary      = "Show images in GLImageScrolView"
   s.homepage     = "https://github.com/Mark-SS/GLImageScrollView.git"
