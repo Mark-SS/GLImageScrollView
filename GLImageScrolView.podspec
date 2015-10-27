@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "GLImageScrolView"
   s.version      = "0.0.1"
   s.summary      = "Show images in GLImageScrolView"
-  s.homepage     = "https://github.com/Mark-SS/GLImageScrollView"
+  s.homepage     = "https://github.com/Mark-SS/GLImageScrollView.git"
   s.license      = "MIT"
   s.author             = { "markss" => "glqdcs@163.com" }
   s.platform     = :ios, "7.0"
