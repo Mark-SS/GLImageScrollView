@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "markss" => "glqdcs@163.com" }
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/Mark-SS/GLImageScrollView", :tag => s.version }
+  s.source       = { :git => "https://github.com/Mark-SS/GLImageScrollView.git", :tag => s.version }
   s.source_files  = "Classes/**/*.{h,m}"
 
   s.requires_arc = true
