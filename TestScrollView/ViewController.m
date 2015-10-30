@@ -33,14 +33,16 @@
     
     [self.view addSubview:_imageScrollView];
     [_imageScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).with.offset(40);
+        make.top.equalTo(self.view).with.offset(140);
         make.leading.equalTo(self.view.mas_leading);
         make.trailing.equalTo(self.view.mas_trailing);
         make.height.mas_equalTo(160);
     }];
     [_imageScrollView reloadData];
-    
+ 
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
+
 
 #pragma mark - ImageScrollViewDelegate 
 - (NSInteger)numberOfItems {

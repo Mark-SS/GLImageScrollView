@@ -5,6 +5,8 @@
 //  Created by gongliang on 15/9/24.
 //  Copyright © 2015年 AB. All rights reserved.
 //
+//  UIViewController automaticallyAdjustsScrollViewInsets 可能会造成 ScrollView可以纵向滚动
+//
 
 #import "GLImageScrollView.h"
 #import <Masonry/Masonry.h>
@@ -52,10 +54,11 @@ static const CGFloat kDefaultScrollInterval = 2;
     self.scrollView.backgroundColor = [UIColor clearColor];
     self.scrollView.delegate = self;
     self.scrollView.pagingEnabled = YES;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
     [self addSubview:self.scrollView];
-    UIEdgeInsets padding = UIEdgeInsetsZero;
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self).with.insets(padding);
+        make.edges.equalTo(self);
     }];
     
     self.contentView = [UIView new];
@@ -102,11 +105,11 @@ static const CGFloat kDefaultScrollInterval = 2;
 }
 
 - (void)reloadData {
-
+    
     for (UIView *subView in self.contentView.subviews) {
         [subView removeFromSuperview];
     }
-    
+        
     self.count = [self.delegate numberOfItems];
     if (self.count == 0) {
         return ;
@@ -120,7 +123,7 @@ static const CGFloat kDefaultScrollInterval = 2;
     UIView *lastView;
     for (NSInteger i = 0; i < self.count; i++) {
         UIImageView *imageView = [UIImageView new];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.tag = kStartTag + i;
         [self.contentView addSubview:imageView];
         
@@ -151,6 +154,7 @@ static const CGFloat kDefaultScrollInterval = 2;
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(lastView.mas_trailing);
     }];
+    
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
